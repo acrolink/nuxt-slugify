@@ -1,0 +1,43 @@
+{
+	"name": "nuxt-slugify",
+	"author": "Lautaro Pereyra <hi@imlautaro.com>",
+	"description": "An easy way to integrate Slugify with Nuxt",
+	"version": "1.0.0",
+	"license": "MIT",
+	"type": "module",
+	"exports": {
+		".": {
+			"import": "./dist/module.mjs",
+			"require": "./dist/module.cjs"
+		}
+	},
+	"main": "./dist/module.cjs",
+	"types": "./dist/types.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"prepack": "nuxt-module-build",
+		"dev": "nuxi dev playground",
+		"dev:build": "nuxi build playground",
+		"dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+		"release": "git push --follow-tags && npm publish"
+	},
+	"dependencies": {
+		"@nuxt/kit": "^3.0.0-rc.6",
+		"defu": "^6.0.0",
+		"slugify": "^1.6.5"
+	},
+	"devDependencies": {
+		"@nuxt/module-builder": "latest",
+		"nuxt": "^3.0.0-rc.6"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nuxtclub/nuxt-slugify.git"
+	},
+	"bugs": "https://github.com/nuxtclub/nuxt-slugify/issues",
+	"publishConfig": {
+		"access": "public"
+	}
+}
