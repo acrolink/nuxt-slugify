@@ -1,6 +1,11 @@
 import { fileURLToPath } from 'url'
 import { defu } from 'defu'
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import {
+	defineNuxtModule,
+	addPlugin,
+	createResolver,
+	addAutoImport,
+} from '@nuxt/kit'
 
 export interface ModuleOptions {
 	extend?: {
@@ -46,5 +51,11 @@ export default defineNuxtModule<ModuleOptions>({
 
 		// Add plugin
 		addPlugin(resolve(runtimeDir, 'plugin'))
+
+		// Add auto imports
+		addAutoImport({
+			from: resolve(runtimeDir, 'composables'),
+			name: 'useSlugify',
+		})
 	},
 })

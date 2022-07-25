@@ -12,6 +12,26 @@ npm i -D nuxt-slugify
 
 2. Add `nuxt-slugify` to the `modules` section of `nuxt.config.ts`.
 
+## Usage
+
+You can use the slugify method with the injected function or with the composable:
+
+```vue
+<template>
+	<div>
+		{{ $slugify('Hello world @ Slugify! 🐱') }}
+	</div>
+</template>
+
+<script setup lang="ts">
+const slugify = useSlugify()
+
+onMounted(() => {
+	console.log(slugify('Hello world @ Slugify! 🐱'))
+})
+</script>
+```
+
 ## Options
 
 ```typescript
