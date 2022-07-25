@@ -2,7 +2,7 @@
 	"name": "nuxt-slugify",
 	"author": "Lautaro Pereyra <hi@imlautaro.com>",
 	"description": "An easy way to integrate Slugify with Nuxt",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"license": "MIT",
 	"type": "module",
 	"exports": {
