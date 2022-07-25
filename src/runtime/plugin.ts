@@ -1,4 +1,4 @@
-import { defineNuxtPlugin, useRuntimeConfig } from '#app'
+import { defineNuxtPlugin, useRuntimeConfig } from '#imports'
 import slugify from 'slugify'
 
 export default defineNuxtPlugin(() => {
