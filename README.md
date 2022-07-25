@@ -1,6 +1,6 @@
 # nuxt-slugify
 
-> Easy way to integrate Slugify with Nuxt
+> Easy way to integrate Slugify with Nuxt 3
 
 ## Setup
 
@@ -11,8 +11,6 @@ npm i -D nuxt-slugify
 ```
 
 2. Add `nuxt-slugify` to the `modules` section of `nuxt.config.ts`.
-
-:warning: If you're using Nuxt 2 use `buildModules` instead.
 
 ## Options
 

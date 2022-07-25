@@ -20,6 +20,9 @@ export default defineNuxtModule<ModuleOptions>({
 	meta: {
 		name: 'nuxt-slugify',
 		configKey: 'slugify',
+		compatibility: {
+			nuxt: '^3.0.0',
+		},
 	},
 	defaults: {
 		extend: {},
