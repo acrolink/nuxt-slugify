@@ -4,7 +4,7 @@ import {
 	defineNuxtModule,
 	addPlugin,
 	createResolver,
-	addAutoImport,
+	addImports,
 } from '@nuxt/kit'
 
 export interface ModuleOptions {
@@ -53,7 +53,7 @@ export default defineNuxtModule<ModuleOptions>({
 		addPlugin(resolve(runtimeDir, 'plugin'))
 
 		// Add auto imports
-		addAutoImport({
+		addImports({
 			from: resolve(runtimeDir, 'composables'),
 			name: 'useSlugify',
 		})
